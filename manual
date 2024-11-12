@@ -101,10 +101,3 @@ To win the game, solve each challenge within the time limit to prevent the bomb 
 - **Wrong Command**: If you see "Wrong answer! The bomb exploded!", check the hints for each command.
 - **Timeout**: Ensure you type the correct command within the time limit for each prompt.
 
-## License
-
-This game is licensed under the MIT License. See the LICENSE file for details.
-
---- 
-
-This manual covers everything a player needs to understand the game and each level’s requirements. Place it in the same directory as your game file for easy access!
