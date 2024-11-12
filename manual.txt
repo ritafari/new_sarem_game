@@ -1,0 +1,110 @@
+Here's a **manual file** for the "Defuse the Bomb" game. The manual includes game instructions, a description of each level, hints for each command, and details on how the game operates. You can save this manual as `MANUAL.md` or `README.md` in the game’s directory.
+
+---
+
+# Defuse the Bomb - Game Manual
+
+Welcome to **Defuse the Bomb**, a terminal-based puzzle game where you must solve Linux command challenges to prevent a bomb from exploding. This manual provides an overview of the gameplay, hints for each level, and instructions on how to start the game.
+
+---
+
+## Table of Contents
+
+- [Objective](#objective)
+- [Setup Instructions](#setup-instructions)
+- [Gameplay](#gameplay)
+- [Levels](#levels)
+  - [Level 1 - Basic Commands](#level-1---basic-commands)
+  - [Level 2 - Intermediate Commands](#level-2---intermediate-commands)
+  - [Level 3 - Advanced Commands](#level-3---advanced-commands)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+
+---
+
+## Objective
+
+To win the game, solve each challenge within the time limit to prevent the bomb from exploding. Each level contains a series of tasks that require specific Linux commands to complete. The difficulty increases as you progress, with each level presenting more complex tasks and shorter time limits.
+
+## Setup Instructions
+
+1. **Download the Game Script**: Make sure you have the `defuse_the_bomb.sh` file saved in a known directory.
+
+2. **Make the Script Executable**:
+   ```bash
+   chmod +x defuse_the_bomb.sh
+   ```
+
+3. **Run the Game**:
+   ```bash
+   ./defuse_the_bomb.sh
+   ```
+
+## Gameplay
+
+- **Timer**: Each task has a countdown. You must complete the task within the time limit to proceed.
+- **Command Prompt**: After each prompt, type the correct command or answer within the time limit.
+- **Strikes**: If you enter an incorrect command or time runs out, the game exits, simulating a bomb explosion.
+
+---
+
+## Levels
+
+### Level 1 - Basic Commands
+- **Objective**: Familiarize yourself with basic Linux commands for navigation and directory listing.
+- **Time Limit**: 20 seconds per prompt.
+
+#### Tasks
+1. **Current Directory**: Find the command that displays the current working directory.
+   - **Hint**: Use a command to print the directory path.
+   - **Expected Command**: `pwd`
+
+2. **Directory Contents**: Find the command to display the files in the current directory.
+   - **Hint**: List all files in this directory.
+   - **Expected Command**: `ls`
+
+---
+
+### Level 2 - Intermediate Commands
+- **Objective**: Use intermediate commands to gather information about files.
+- **Time Limit**: 15 seconds per prompt.
+
+#### Tasks
+1. **Count Lines**: Count the lines in this script file.
+   - **Hint**: Use a command that counts lines in a file.
+   - **Expected Command**: `wc -l < defuse_the_bomb.sh`
+
+2. **Display Last Lines**: Display the last 5 lines of the script.
+   - **Hint**: Use a command that shows the end of a file.
+   - **Expected Command**: `tail -n 5 defuse_the_bomb.sh`
+
+---
+
+### Level 3 - Advanced Commands
+- **Objective**: Use advanced Linux commands to search and edit content within the file.
+- **Time Limit**: 10 seconds per prompt.
+
+#### Tasks
+1. **Search for Text**: Find all lines containing the word "bomb" in the script.
+   - **Hint**: Use a command to search for specific text within a file.
+   - **Expected Command**: `grep 'bomb' defuse_the_bomb.sh`
+
+2. **Replace Text**: Replace all instances of "defuse" with "disable" in the script (output only; do not save).
+   - **Hint**: Use a command that can replace text within a file's output.
+   - **Expected Command**: `sed 's/defuse/disable/g' defuse_the_bomb.sh`
+
+---
+
+## Troubleshooting
+
+- **Authentication Failed**: Make sure you have permission to execute the file with `chmod +x defuse_the_bomb.sh`.
+- **Wrong Command**: If you see "Wrong answer! The bomb exploded!", check the hints for each command.
+- **Timeout**: Ensure you type the correct command within the time limit for each prompt.
+
+## License
+
+This game is licensed under the MIT License. See the LICENSE file for details.
+
+--- 
+
+This manual covers everything a player needs to understand the game and each level’s requirements. Place it in the same directory as your game file for easy access!
