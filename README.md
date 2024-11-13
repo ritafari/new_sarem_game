@@ -5,9 +5,9 @@ Here's a **README.md** file for your "Defuse the Bomb" game, detailing the game'
 
 ---
 
-# Defuse the Bomb Game
+# Sarem Game
 
-"Defuse the Bomb" is a terminal-based game inspired by "Keep Talking and Nobody Explodes," where players must defuse a virtual bomb by solving Linux command-based puzzles within a set time limit. The game consists of three levels, each increasing in difficulty, and teaches players useful Linux command skills in an interactive and challenging way.
+"Sarem" is a terminal-based game inspired by "Keep Talking and Nobody Explodes," where players must defuse a virtual bomb by solving Linux command-based puzzles within a set time limit. The game consists of three levels, each increasing in difficulty, and teaches players useful Linux command skills in an interactive and challenging way.
 
 ## Table of Contents
 
@@ -19,6 +19,10 @@ Here's a **README.md** file for your "Defuse the Bomb" game, detailing the game'
 ## About the Game
 
 In this game, you must solve Linux command challenges to defuse a bomb. Each level consists of different tasks that must be completed within a time limit. Fail to complete a task in time, or enter an incorrect answer, and the bomb explodes! Each level is designed to teach you Linux commands, progressing from basic to advanced.
+To be able to play:
+1. Use a Subshell for Exploration: In each prompt, allow players to enter a subshell (another terminal session) to explore.
+2. Prompt for the Answer After Exiting: After they exit the subshell, prompt for the answer and validate it.
+
 
 ## Installation
 
